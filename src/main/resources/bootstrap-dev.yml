@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: iToken-config
+  boot:
+    admin:
+      client:
+        url: http://localhost:18230
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: http://192.168.137.130/iToken/iToken-config.git
+          search-paths: respo
+          username: yuxl@gitvip.com
+          password: 12345678
+  zipkin:
+    base-url: http://localhost:18210
+
+server:
+  port: 18000
+
+#enreka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/

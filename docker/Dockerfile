@@ -6,6 +6,6 @@ MAINTAINER yuxl <164553349@qq.com>
 RUN mkdir /app
 COPY iToken-config-1.0.0-SNAPSHOT.jar /app/app.jar
 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app/app.jar","--spring.profiles.active=prod"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app/app.jar","--spring.profiles.active=dev"]
 
 EXPOSE 8000
