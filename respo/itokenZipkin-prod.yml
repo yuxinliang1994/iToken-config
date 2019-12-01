@@ -12,7 +12,7 @@ server:
 enreka:
   client:
     serviceUrl:
-      defaulZone: http://192.168.137.133:8110/eureka/,http://192.168.137.133:8120/eureka/,http://192.168.137.133:8130/eureka/
+      defaultZone: http://192.168.137.133:8110/eureka/,http://192.168.137.133:8120/eureka/,http://192.168.137.133:8130/eureka/
 
 management:
   metrics:
