@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: iToken-zipkin
+  boot:
+    admin:
+      client:
+        url: http://localhost:18230
+
+server:
+  port: 18210
+
+enreka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:18110/eureka/
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

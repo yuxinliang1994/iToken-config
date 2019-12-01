@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: iToken-zuul
+  boot:
+    admin:
+      client:
+        url: http://192.168.137.133:8230
+  zipkin:
+    base-url: http://192.168.137.133:8210
+
+server:
+  port: 8220
+
+eureka:
+  client:
+    serviceUrl:
+      defaulZone: http://192.168.137.133:8110/eureka/,http://192.168.137.133:8120/eureka/,http://192.168.137.133:8130/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /apo/a/**
+      serviceId: iToken-web-admin-ribbon1
+    api-b:
+      path: /apo/b/**
+      serviceId: iToken-web-admin-ribbon1
+
+
+management:
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
