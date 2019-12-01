@@ -16,7 +16,7 @@ build:
 push:
   stage: push
   script:
-    - docker pull 192.168.137.132:5000/itoken-config
+    - docker push 192.168.137.132:5000/itoken-config
 
 run:
   stage: run
