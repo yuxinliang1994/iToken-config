@@ -2,7 +2,7 @@ version: '3.1'
 services:
   itoken-config:
     restart: always
-    image: 192.168.137.132:5000/itoken-config
+    image: 192.168.137.132:5000/iToken-config:1.0.1
     container_name: iToken-config
     ports:
       - 8000:8000
