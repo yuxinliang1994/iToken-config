@@ -12,7 +12,7 @@ spring:
     base-url: http://192.168.137.133:8210
   datasource:
     druid:
-      url: jdbc:mysql://192.168.137.133:9001/itoken-service-admin?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      url: jdbc:mysql://192.168.137.133:9001/itoken-service-admin?userUnicode=true&characterEncoding=utf-8&useSSL=false
       username: root
       password: 123456
       initial-size: 1
@@ -20,6 +20,8 @@ spring:
       max-active: 20
       test-on-borrow: true
       driver-class-name: com.mysql.jdbc.Driver
+
+
 
 # MyBatis
 mybatis:
