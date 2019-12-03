@@ -1,0 +1,32 @@
+server:
+  port: 18700
+
+spring:
+  application:
+    name: iToken-web-admin
+  boot:
+    admin:
+      client:
+        url: http://localhost:18230
+  zipkin:
+    base-url: http://localhost:18210
+  thymeleaf:
+    cache: false #开发时关闭页面缓存
+    mode: LEGACYHTML5 #使用非严格 HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://18110/eureka
+
+management:
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

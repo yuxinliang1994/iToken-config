@@ -11,12 +11,12 @@ build:
     - /usr/local/maven/apache-maven-3.5.2/bin/mvn clean package
     - cp target/iToken-config-1.0.0-SNAPSHOT.jar docker
     - cd docker
-    - docker build -t 192.168.137.132:5000/itoken-config .
+    - docker build -t 192.168.137.130:5000/itoken-config .
 
 push:
   stage: push
   script:
-    - docker push 192.168.137.132:5000/itoken-config
+    - docker push 192.168.137.130:5000/itoken-config
 
 run:
   stage: run

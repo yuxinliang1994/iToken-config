@@ -1,0 +1,34 @@
+server:
+  port: 8700
+
+spring:
+  application:
+    name: iToken-web-admin
+  boot:
+    admin:
+      client:
+        url: http://192.168.137.133:8230
+  zipkin:
+    base-url: http://192.168.137.133:8210
+  thymeleaf:
+    cache: false #开发时关闭页面缓存
+    mode: LEGACYHTML5 #使用非严格 HTML
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.137.133:8110/eureka/,http://192.168.137.133:8120/eureka/,http://192.168.137.133:8130/eureka/
+
+management:
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
