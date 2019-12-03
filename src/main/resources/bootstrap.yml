@@ -12,7 +12,7 @@ spring:
         git:
           uri: http://192.168.137.130/iToken/iToken-config.git
           search-paths: respo
-          username: yuxl@gitvip.com
+          username: yuxl@git.com
           password: 12345678
   zipkin:
     base-url: http://localhost:18210
