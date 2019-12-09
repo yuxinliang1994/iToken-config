@@ -1,9 +1,25 @@
 spring:
   application:
     name: iToken-eureka
+  boot:
+    admin:
+      client:
+        url: http://localhost:18230
+  zipkin:
+    base-url: http://localhost:18210
 
 server:
   port: 18110
+
+
+management:
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 eureka:
   instance:
