@@ -1,0 +1,21 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:18230
+  zipkin:
+    base-url: http://localhost:18210
+
+management:
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+enreka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:18110/eureka/

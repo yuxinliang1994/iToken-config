@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: iToken-zipkin
+
+server:
+  port: 18210
+
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: "*"

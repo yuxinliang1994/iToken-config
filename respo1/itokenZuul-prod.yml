@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: iToken-zuul
+
+server:
+  port: 8220
+
+zuul:
+  routes:
+    api-admin:
+      path: /api/admin/**
+      serviceId: iToken-admin
+    api-zipkin:
+      path: /api/zuul/**
+      serviceId: iToken-zipkin

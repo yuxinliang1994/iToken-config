@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: iToken-admin
+
+server:
+  port: 18230

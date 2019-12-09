@@ -20,10 +20,10 @@ zuul:
   routes:
     api-a:
       path: /apo/a/**
-      serviceId: iToken-web-admin-ribbon1
+      serviceId: iToken-web-admin-ribbon11
     api-b:
       path: /apo/b/**
-      serviceId: iToken-web-admin-ribbon1
+      serviceId: iToken-web-admin-ribbon12
 
 
 management:
