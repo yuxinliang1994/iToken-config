@@ -18,4 +18,4 @@ management:
 enreka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:18110/eureka/
+      defaultZone: http://localhost:8110/eureka/
