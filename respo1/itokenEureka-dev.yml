@@ -1,6 +1,6 @@
 spring:
   application:
-    name: iToken-service-admin
+    name: iToken-eureka
 
 server:
   port: 18110
