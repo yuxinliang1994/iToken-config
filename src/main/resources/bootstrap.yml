@@ -11,7 +11,7 @@ spring:
       server:
         git:
           uri: https://github.com/yuxinliang1994/iToken-config.git
-          search-paths: respo1
+          search-paths: respo
           username: 164553349@qq.com
           password: a8664362
   zipkin:
