@@ -1,36 +1,15 @@
 spring:
   application:
     name: iToken-zuul
-  boot:
-    admin:
-      client:
-        url: http://localhost:18230
-  zipkin:
-    base-url: http://localhost:18210
-
 server:
   port: 18210
 
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://18110/eureka
 
 zuul:
   routes:
-    api-a:
-      path: /apo/a/**
-      serviceId: iToken-web-admin-ribbon1
-    api-b:
-      path: /apo/b/**
-      serviceId: iToken-web-admin-ribbon1
+    api-admin:
+      path: /apo/admin/**
+      serviceId: iToken-admin
 
 
-management:
-  endpoint:
-    health:
-    show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+
