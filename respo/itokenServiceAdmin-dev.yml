@@ -34,7 +34,7 @@ mybatis:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://18110/eureka
+      defaultZone: http://localhost:18110/eureka/
 
 management:
   endpoint:

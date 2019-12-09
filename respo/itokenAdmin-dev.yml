@@ -16,7 +16,7 @@ management:
       exposure:
         include: "*"
 
-enreka:
+eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:18110/eureka/

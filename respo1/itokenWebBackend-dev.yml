@@ -1,6 +1,0 @@
-server:
-  port: 18701
-
-spring:
-  application:
-    name: iToken-web-backend

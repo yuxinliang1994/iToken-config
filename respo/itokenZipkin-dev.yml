@@ -9,7 +9,7 @@ spring:
 server:
   port: 18210
 
-enreka:
+eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:18110/eureka/

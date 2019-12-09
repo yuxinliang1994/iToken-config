@@ -1,6 +1,0 @@
-server:
-  port: 18700
-
-spring:
-  application:
-    name: iToken-web-admin
