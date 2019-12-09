@@ -1,6 +1,22 @@
 spring:
   application:
     name: iToken-admin
+  zipkin:
+    base-url: http://192.168.137.133:8210
 
 server:
   port: 8230
+
+management:
+  endpoint:
+    health:
+    show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+
+enreka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.137.133:8110/eureka/,http://192.168.137.133:8120/eureka/,http://192.168.137.133:8130/eureka/
