@@ -19,7 +19,7 @@ server:
 
 eureka:
   instance:
-    hostname: 127.0.0.1
+    hostname: ${itoken.component.eureka}
   client:
     registerWithEureka: false
     fetchRegistry: false
