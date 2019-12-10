@@ -1,6 +1,3 @@
-server:
-  port: 8500
-
 spring:
   application:
     name: iToken-service-admin
