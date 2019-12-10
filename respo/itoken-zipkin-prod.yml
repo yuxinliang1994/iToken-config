@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: iToken-zipkin
+
+server:
+  port: 8210

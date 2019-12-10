@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: iToken-zuul
+
+server:
+  port: 8220
+
+zuul:
+  routes:
+    api-a:
+      path: /apo/a/**
+      serviceId: iToken-web-admin-ribbon11
+    api-b:
+      path: /apo/b/**
+      serviceId: iToken-web-admin-ribbon12

@@ -1,24 +1,20 @@
 spring:
   application:
-    name: iToken-zipkin
-  boot:
-    admin:
-      client:
-        url: http://localhost:18230
+    name: iToken-eureka
 
 server:
-  port: 18210
+  port: 18110
 
 eureka:
+  instance:
+    hostname: localhost
   client:
+    registerWithEureka: false
+    fetchRegistry: false
     serviceUrl:
       defaultZone: http://localhost:18110/eureka/
 
 management:
-  metrics:
-    web:
-      server:
-        auto-time-requests: false
   endpoint:
     health:
     show-details: always

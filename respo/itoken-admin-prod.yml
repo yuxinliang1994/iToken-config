@@ -15,8 +15,3 @@ management:
     web:
       exposure:
         include: health,info
-
-enreka:
-  client:
-    serviceUrl:
-      defaultZone: http://192.168.137.133:8110/eureka/,http://192.168.137.133:8120/eureka/,http://192.168.137.133:8130/eureka/

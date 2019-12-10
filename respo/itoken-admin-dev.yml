@@ -1,8 +1,6 @@
 spring:
   application:
     name: iToken-admin
-  zipkin:
-    base-url: http://localhost:18210
 
 server:
   port: 18230
@@ -15,8 +13,3 @@ management:
     web:
       exposure:
         include: "*"
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:18110/eureka/

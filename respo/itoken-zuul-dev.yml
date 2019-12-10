@@ -1,9 +1,9 @@
 spring:
   application:
     name: iToken-zuul
+
 server:
   port: 18210
-
 
 zuul:
   routes:
