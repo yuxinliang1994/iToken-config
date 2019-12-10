@@ -1,8 +1,6 @@
 spring:
   application:
     name: iToken-admin
-  zipkin:
-    base-url: http://192.168.137.133:8210
 
 server:
   port: ${itoken.component.admin}

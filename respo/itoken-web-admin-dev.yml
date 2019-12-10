@@ -2,4 +2,4 @@ spring:
   application:
     name: iToken-web-admin
 server:
-  port: 18700
+  port: ${itoken.component.web-admin}

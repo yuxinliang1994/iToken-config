@@ -4,8 +4,12 @@ itoken:
     admin: localhost
     zipkin: localhost
     zuul: localhost
+    service-admin: localhost
+    web-admin: localhost
   component:
     eureka: 18110
     admin: 18230
     zipkin: 18210
     zuul: 18220
+    service-admin: 18500
+    web-admin: 18700
