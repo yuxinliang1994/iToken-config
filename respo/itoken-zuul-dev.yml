@@ -3,7 +3,7 @@ spring:
     name: iToken-zuul
 
 server:
-  port: 18210
+  port: 18220
 
 zuul:
   routes:
