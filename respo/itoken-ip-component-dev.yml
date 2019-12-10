@@ -1,5 +1,6 @@
 itoken:
   ip:
+    config: localhost
     eureka: localhost
     admin: localhost
     zipkin: localhost
@@ -8,6 +9,7 @@ itoken:
     service-admin: localhost
     web-admin: localhost
   component:
+    config: 18000
     eureka: 18110
     admin: 18230
     zipkin: 18210

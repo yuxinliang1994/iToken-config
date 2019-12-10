@@ -4,18 +4,18 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:18230
+        url: http://${itoken.ip.admin}:${itoken.component.admin}
   cloud:
     config:
       label: master
       server:
         git:
-          uri: ${cloud.config.server.git.uri}
-          search-paths: ${cloud.config.server.git.search-paths}
-          username: ${cloud.config.server.git.username}
-          password: ${cloud.config.server.git.password}
+          uri: https://github.com/yuxinliang1994/iToken-config.git
+          search-paths: respo
+          username: 164553349@qq.com
+          password: a8664362
   zipkin:
-    base-url: http://localhost:18210
+    base-url: http://${itoken.ip.zipkin}:${itoken.component.zipkin}
 
 server:
-  port: ${itoken-config.component}
+  port: ${itoken.config.zipkin}
