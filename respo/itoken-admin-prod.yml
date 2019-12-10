@@ -5,7 +5,7 @@ spring:
     base-url: http://192.168.137.133:8210
 
 server:
-  port: {itoken.component.admin}
+  port: ${itoken.component.admin}
 
 management:
   endpoint:

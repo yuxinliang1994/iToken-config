@@ -3,7 +3,7 @@ spring:
     name: iToken-zuul
 
 server:
-  port: {itoken.component.zuul}
+  port: ${itoken.component.zuul}
 
 zuul:
   routes:
