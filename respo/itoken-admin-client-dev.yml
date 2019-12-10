@@ -2,7 +2,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:18230
+        url: http://{itoken.ip.admin}:{itoken.component.admin}
 
 management:
   endpoint:

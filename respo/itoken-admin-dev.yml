@@ -3,7 +3,7 @@ spring:
     name: iToken-admin
 
 server:
-  port: 18230
+  port: {itoken.component.admin}
 
 management:
   endpoint:

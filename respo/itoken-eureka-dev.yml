@@ -3,16 +3,16 @@ spring:
     name: iToken-eureka
 
 server:
-  port: 18110
+  port: {itoken.component.eureka}
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: {itoken.ip.eureka}
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://localhost:18110/eureka/
+      defaultZone: http://{itoken.ip.eureka}:{itoken.service.eureka}/eureka/
 
 management:
   endpoint:

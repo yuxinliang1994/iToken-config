@@ -3,7 +3,7 @@ spring:
     name: iToken-zipkin
 
 server:
-  port: 18210
+  port: {itoken.component.zipkin}
 
 management:
   metrics:

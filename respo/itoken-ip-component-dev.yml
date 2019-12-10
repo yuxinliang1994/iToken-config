@@ -1,0 +1,11 @@
+itoken:
+  ip:
+    eureka: localhost
+      admin: localhost
+      zipkin: localhost
+      zuul: localhost
+  component:
+    eureka: 18110
+    admin: 18230
+    zipkin: 18210
+    zuul: 18220

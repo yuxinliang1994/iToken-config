@@ -9,7 +9,6 @@ import javax.security.auth.login.Configuration;
 
 @SpringBootApplication
 @EnableConfigServer //配置中心服务端
-@EnableEurekaClient //开启Eureka服务提供者
 public class ConfigApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConfigApplication.class, args);

@@ -1,0 +1,15 @@
+itoken:
+  ip:
+    eureka-1: 192.168.137.133
+    eureka-2: 192.168.137.133
+    eureka-3: 192.168.137.133
+    admin: 192.168.137.133
+    zipkin: 192.168.137.133
+    zuul: 192.168.137.133
+  component:
+    eureka-1: 8110
+    eureka-2: 8111
+    eureka-3: 8112
+    admin: 8230
+    zipkin: 8210
+    zuul: 8220

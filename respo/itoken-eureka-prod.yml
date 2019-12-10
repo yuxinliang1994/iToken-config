@@ -3,11 +3,11 @@ spring:
     name: com.itoken
 
 server:
-  port: 8110
+  port: {itoken.component.eureka}
 
 eureka:
   instance:
-    hostname: 192.168.137.133
+    hostname: {itoken.ip.eureka}
   client:
     # 表示是否将自己注册到Eureka，因为要构建集群环境，需要将自己注册到集群，此处设置为true
     registerWithEureka: true
