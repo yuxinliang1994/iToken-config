@@ -12,7 +12,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://{itoken.ip.eureka}:{itoken.component.eureka}/eureka/
+      defaultZone: http://127.0.0.1:18110/eureka/
 
 management:
   endpoint:
