@@ -5,3 +5,8 @@ spring:
 server:
   port: 18210
 
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
