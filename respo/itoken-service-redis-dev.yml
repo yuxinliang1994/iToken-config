@@ -1,0 +1,11 @@
+spring:
+  redis:
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        max-wait: -1ms
+        min-idea: 0
+    sentinel:
+      master: mymaster
+      nodes: ${itoken.ip.sentinel-1}:${itoken.component.sentinel-1}, ${itoken.ip.sentinel-2}:${itoken.component.sentinel-2}, ${itoken.ip.sentinel-3}:${itoken.component.sentinel-3}

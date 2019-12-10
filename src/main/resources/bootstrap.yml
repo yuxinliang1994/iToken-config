@@ -4,7 +4,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://${itoken.ip.admin}:${itoken.component.admin}
+        url: http://localhost:18230
   cloud:
     config:
       label: master
@@ -15,7 +15,7 @@ spring:
           username: 164553349@qq.com
           password: a8664362
   zipkin:
-    base-url: http://${itoken.ip.zipkin}:${itoken.component.zipkin}
+    base-url: http://localhost:18210
 
 server:
-  port: ${itoken.config.zipkin}
+  port: 18000

@@ -6,6 +6,13 @@ itoken:
     zipkin: localhost
     zuul: localhost
     mysql: localhost
+    redis-1: 192.168.154.130
+    redis-2: 192.168.154.130
+    redis-3: 192.168.154.130
+    sentinel-1: 192.168.154.130
+    sentinel-2: 192.168.154.130
+    sentinel-3: 192.168.154.130
+    service-redis: localhost
     service-admin: localhost
     web-admin: localhost
   component:
@@ -15,5 +22,12 @@ itoken:
     zipkin: 18210
     zuul: 18220
     mysql: 9001
+    redis-1: 6379
+    redis-2: 6380
+    redis-3: 6381
+    sentinel-1: 26379
+    sentinel-2: 26380
+    sentinel-3: 26381
+    service-redis: 18501
     service-admin: 18500
     web-admin: 18700
