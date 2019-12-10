@@ -19,12 +19,12 @@ server:
 
 eureka:
   instance:
-    hostname: ${itoken.component.eureka}
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${itoken.ip.eureka}:${itoken.component.eureka}/eureka/
+      defaultZone: http://localhost:18110/eureka/
 
 management:
   endpoint:
