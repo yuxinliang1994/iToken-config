@@ -15,7 +15,7 @@ spring:
     name: iToken-eureka
 
 server:
-  port: {itoken.ip.eureka}
+  port: {itoken.component.eureka}
 
 eureka:
   instance:
