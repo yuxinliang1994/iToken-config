@@ -4,6 +4,7 @@ itoken:
     admin: localhost
     zipkin: localhost
     zuul: localhost
+    mysql: localhost
     service-admin: localhost
     web-admin: localhost
   component:
@@ -11,5 +12,6 @@ itoken:
     admin: 18230
     zipkin: 18210
     zuul: 18220
+    mysql: 9001
     service-admin: 18500
     web-admin: 18700
