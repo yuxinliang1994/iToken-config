@@ -1,9 +1,8 @@
+server:
+  port: ${itoken.component.zuul}
 spring:
   application:
     name: iToken-zuul
-
-server:
-  port: ${itoken.component.zuul}
 
 zuul:
   routes:

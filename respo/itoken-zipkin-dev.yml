@@ -1,9 +1,8 @@
+server:
+  port: ${itoken.component.zipkin}
 spring:
   application:
     name: iToken-zipkin
-
-server:
-  port: ${itoken.component.zipkin}
 
 management:
   metrics:

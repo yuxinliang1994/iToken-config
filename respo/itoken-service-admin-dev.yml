@@ -1,8 +1,9 @@
+server:
+  port: ${itoken.component.service-admin}
 spring:
   application:
     name: iToken-service-admin
-server:
-  port: ${itoken.component.service-admin}
+
 
 
 
