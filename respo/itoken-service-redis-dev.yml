@@ -1,8 +1,9 @@
 server:
-  port: ${itoken.component.redis}
+  port: ${itoken.component.service-redis}
+
 spring:
   application:
-    name: iToken-service-rids
+    name: iToken-service-redis
   redis:
     lettuce:
       pool:
