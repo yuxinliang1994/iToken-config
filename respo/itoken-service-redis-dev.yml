@@ -1,4 +1,8 @@
+server:
+  port: 18501
 spring:
+  application:
+    name: iToken-service-rids
   redis:
     lettuce:
       pool:
