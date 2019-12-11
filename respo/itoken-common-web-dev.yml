@@ -7,3 +7,7 @@ spring:
     encoding: UTF-8
     servlet:
       content-type: text/html
+
+fergn:
+  hystrix:
+    enabled: true

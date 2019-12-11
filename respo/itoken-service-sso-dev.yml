@@ -1,0 +1,12 @@
+server:
+  port: ${itoken.component.service-sso}
+spring:
+  application:
+    name: iToken-service-sso
+
+# MyBatis
+mybatis:
+  # 实体类的存放路径
+  type-aliases-package: com.itoken.service.sso.mapper
+  # xml的存放路径
+  mapper-locations: classpath:mapper/*.xml

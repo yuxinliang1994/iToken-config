@@ -4,7 +4,12 @@ spring:
   application:
     name: iToken-service-admin
 
-
+# MyBatis
+mybatis:
+  # 实体类的存放路径
+  type-aliases-package: com.itoken.service.mapper
+  # xml的存放路径
+  mapper-locations: classpath:mapper/*.xml
 
 
 
