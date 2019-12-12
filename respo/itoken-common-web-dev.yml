@@ -3,9 +3,12 @@ spring:
     name: iToken-web-admin
   thymeleaf:
     cache: false #开发时关闭页面缓存
-    mode: LEGACYHTML5 #使用非严格 HTML
+    mode: HTML5 #使用非严格 HTML
     encoding: UTF-8
-    content-type: text/html
+    servlet:
+      content-type: text/html
+    suffix: .html
+
 
 fergn:
   hystrix:
