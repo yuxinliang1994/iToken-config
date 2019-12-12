@@ -5,7 +5,6 @@ spring:
     cache: false #开发时关闭页面缓存
     mode: LEGACYHTML5 #使用非严格 HTML
     encoding: UTF-8
-    servlet:
     content-type: text/html
 
 fergn:
