@@ -1,5 +1,7 @@
 server:
+  ip: ${itoken.ip.web-admin}
   port: ${itoken.component.web-admin}
+
 spring:
   application:
     name: iToken-web-admin
