@@ -1,0 +1,14 @@
+server:
+  port: ${itoken.component.service-elasticsearch}
+spring:
+  application:
+    name: iToken-service-elasticsearch
+  elasticsearch:
+    jest:
+      uris: http://192.168.154.130:9200
+
+
+
+
+
+
