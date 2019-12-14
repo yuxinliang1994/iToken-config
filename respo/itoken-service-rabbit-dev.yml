@@ -1,5 +1,5 @@
 server:
-  port: ${itoken.component.service-rabbit}
+  port: 18505
 
 spring:
   application:
