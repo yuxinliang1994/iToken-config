@@ -1,0 +1,11 @@
+server:
+  port: ${itoken.component.service-upload}
+
+spring:
+  application:
+    name: iToken-service-upload
+fastdfs.base.url: http://${itoken.ip.fastDFS-tracker}:${itoken.component.fastDFS-tracker}/ #追踪器服务
+storae:
+  type: fastdfs
+  fastdfs:
+    tracker_server: ${itoken.ip.fastDFS-nginx}:${itoken.component.fastDFS-nginx} #FastDfs服务
