@@ -1,0 +1,15 @@
+server:
+  port: ${itoken.component.service-rabbit}
+
+spring:
+  application:
+    name: iToken-service-rabbit
+  rabbitmq:
+    host: ${itoken.ip.rabbit}
+    port: ${itoken.component.rabbit}
+    username: rabbit
+    password: 123456
+
+
+
+
